@@ -156,7 +156,7 @@ contract DIDContract is ERC20 {
         revokeAttribute(identity, checkSignature(identity, sigV, sigR, sigS, hash), name, value);
     }
 
-    function getNonce(address  identity) public view  returns (uint nonceValue) {
+    function getNonce(address identity) public view  returns (uint nonceValue) {
         return nonce[identity];
-       }
+    }
 }
